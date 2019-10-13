@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <edu.niit.android.customview.CustomToolbar
+        app:backgroundColor="@android:color/white"
+        app:title="自定义标题栏"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <edu.niit.android.customview.SimpleImageViewV2
+            app:src="@drawable/icon_400"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="300dp" />
+
+        <edu.niit.android.customview.MeaturedCircleImageView
+            app:src="@drawable/icon_400"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <edu.niit.android.customview.HorizontalView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/lv_one"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+            <ListView
+                android:id="@+id/lv_two"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </edu.niit.android.customview.HorizontalView>
+    </LinearLayout>
+</LinearLayout>
